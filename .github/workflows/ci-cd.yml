@@ -1,0 +1,28 @@
+name: ci/cd
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: colone the code
+        run: echo"clone code"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: buid
+        run: echo "building"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: echo "testing"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy
+        run: echo "deploying" 
+  
